@@ -1,0 +1,6 @@
+Vulnerability Report:
+
+File path: 0x0da76de0916ef2da3c58a97e4d09d501c56a9f15.sol
+Contract name: Private_accumulation_fund
+Reentrancy vulnerability: Yes
+Description: Simple Reentrancy

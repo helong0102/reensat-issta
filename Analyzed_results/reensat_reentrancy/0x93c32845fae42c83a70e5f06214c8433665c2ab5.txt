@@ -1,0 +1,6 @@
+Vulnerability Report:
+
+File path: 0x93c32845fae42c83a70e5f06214c8433665c2ab5.sol
+Contract name: X_WALLET
+Reentrancy vulnerability: Yes
+Description: Simple Reentrancy

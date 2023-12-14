@@ -1,0 +1,6 @@
+Vulnerability Report:
+
+File path: 0x85179ac15aa94e3ca32dd1cc04664e9bb0062115.sol
+Contract name: COIN_BOX
+Reentrancy vulnerability: Yes
+Description: Simple Reentrancy

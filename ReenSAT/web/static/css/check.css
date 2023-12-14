@@ -1,0 +1,109 @@
+.page-bg {
+  background: url("../img/check/bg.png");
+  background-size: 100% 100%;
+}
+
+.page-col:nth-child(1) {
+  width: 100%;
+  height: 1.43rem;
+  padding-left: 0.5rem;
+  font-size: 0.4rem;
+}
+.logo-container {
+  width: 3.38rem;
+  height: 0.74rem;
+}
+.logo-container .logo {
+  width: 0.62rem;
+  height: 0.74rem;
+}
+.page-col:nth-child(2) {
+  width: 100%;
+  height: 1.15rem;
+  padding-left: 0.5rem;
+  font-size: 0.32rem;
+  background: url("../img/check/split-line.png");
+  background-size: 100% 100%;
+}
+.btn-groups {
+  width: 6.53rem;
+  height: 100%;
+}
+.btn-common {
+  width: 3.03rem;
+  height: 0.72rem;
+  border-radius: 55px;
+  border: none !important;
+  color: #414aa2;
+}
+.page-col:nth-child(3) {
+  width: 100%;
+  height: calc(100% - 1.15rem - 1.43rem);
+  padding: 0.32rem 1.44rem 0.61rem 1.42rem;
+}
+.code-container {
+  width: 6.5rem;
+  height: 7.29rem;
+  padding: 0.2rem;
+  background: #ffffff;
+  border-radius: 0.4rem;
+  background: url("../img/check/right-container.png");
+  background-size: 100% 100%;
+}
+.right-container{
+  padding: 0.53rem 0.2rem;
+  font-size: 0.28rem;
+  color: #2C347C !important;
+
+}
+.result-text{
+  width: 100%;
+  height: 100%;
+  padding-right: 0.3rem;
+  padding-left: 0.2rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.middle-container {
+  width: 2.42rem;
+  height: 100%;
+  padding: 1.29rem 0 1.43rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.operation-btn {
+  width: 2.42rem;
+  height: 0.63rem;
+  font-size: 0.32rem;
+  background: url("../img/check/operation-btn-bg.png");
+  background-size: 100% 100%;
+  border-radius: 0.32rem;
+  border: none !important;
+  color: #414aa2 !important;
+}
+.page-col:nth-child(4) {
+  width: 100%;
+  height: calc(100% - 1.15rem - 1.43rem);
+  padding: 1.01rem 2.54rem 0.8rem 2.63rem;
+  font-size: 0.32rem;
+}
+.about-me-container {
+  width: 100%;
+  height: 100%;
+  background: url("../img/check/about-me-bg.png");
+  background-size: 100% 100%;
+  padding: 1.77rem 0 2.1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: #414aa2;
+}
+
+#code{
+  width: 100%;
+  height: 100%;
+  font-size: 0.3rem !important;
+}

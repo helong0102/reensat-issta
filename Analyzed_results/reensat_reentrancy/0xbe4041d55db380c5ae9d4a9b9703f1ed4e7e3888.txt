@@ -1,0 +1,6 @@
+Vulnerability Report:
+
+File path: 0xbe4041d55db380c5ae9d4a9b9703f1ed4e7e3888.sol
+Contract name: MONEY_BOX
+Reentrancy vulnerability: Yes
+Description: Simple Reentrancy

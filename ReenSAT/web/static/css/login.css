@@ -1,0 +1,118 @@
+.page-bg {
+  background: url("../img/login/bg.png");
+  background-size: 100% 100%;
+}
+.form-container {
+  width: 10.18rem;
+  height: 8.62rem;
+  padding: 0 1.47rem;
+  background: url("../img/login/form-bg.png");
+  background-size: 100% 100%;
+  position: relative;
+  top: 1.24rem;
+  left: 6.71rem;
+}
+
+.form-item:nth-of-type(1) {
+  width: 100%;
+  height: 2.35rem;
+  padding: 0 0.99rem 0 0.72rem;
+  font-size: 0.62rem;
+}
+.form-item:nth-of-type(2) {
+  width: 100%;
+  height: 2.68rem;
+
+  font-size: 0.44rem;
+}
+.user-icon {
+  width: 0.45rem;
+  height: 0.45rem;
+}
+.form-item form {
+  width: 100%;
+  height: 2.68rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.item-common {
+  width: 100%;
+  height: 1.11rem;
+  background: url("../img/login/input-bg.png");
+  background-size: 100% 100%;
+}
+.item-user {
+  padding-left: 0.38rem;
+}
+.item-user input {
+  width: 4.77rem;
+  height: 100%;
+  background: transparent;
+  border: none !important;
+}
+.item-password {
+  padding: 0 0.4rem 0 0.38rem;
+}
+.eye-icon {
+  width: 0.39rem;
+  height: 0.2rem;
+}
+.password-icon {
+  width: 0.38rem;
+  height: 0.5rem;
+}
+.item-password input {
+  width: 3.75rem;
+  height: 100%;
+  background: transparent;
+  border: none !important;
+}
+
+.form-item .logo {
+  width: 1rem;
+  height: 1.19rem;
+}
+.form-item:nth-of-type(3) {
+  width: 100%;
+  height: 1.2rem;
+  color: #ffe869;
+  padding: 0 0.58rem 0 0.58rem;
+  font-size: 0.28rem;
+}
+
+.radio-container {
+  width: 2.2rem;
+  height: 100%;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.free-login {
+  width: 0.38rem;
+  height: 0.37rem;
+}
+.form-item:nth-of-type(4) {
+  width: 100%;
+  height: 1.2rem;
+  color: #414aa2;
+  font-size: 0.46rem;
+}
+.btn-common {
+  width: 2.98rem;
+  height: 1.12rem;
+  background: url("../img/login/login-btn-bg.png");
+  background-size: 100% 100%;
+  border-radius: 55px;
+  border: none !important;
+}
+
+.form-item:nth-of-type(5) {
+  width: 100%;
+  height: 1.26rem;
+  padding-top: 0.35rem;
+  font-size: 0.28rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}

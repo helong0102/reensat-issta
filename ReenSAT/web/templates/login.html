@@ -1,0 +1,65 @@
+<!--
+ * @Author: tangchen 190854524@qq.com
+ * @Date: 2023-09-02 15:01:19
+ * @LastEditors: tangchen 190854524@qq.com
+ * @LastEditTime: 2023-12-02 11:08:06
+ * @FilePath: \二妙散\ErMiao-Powder\index.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/login.css" />
+    <link rel="stylesheet" href="../static/css/global.css" />
+  </head>
+  <body>
+    <div class="page-root page-bg">
+      <div class="form-container">
+        <div class="form-item flex-space-between font-common-style">
+          <img src="../static/img/public/logo.png" class="logo" alt="" />
+          <span>ReenSAT-登录</span>
+        </div>
+        <div class="form-item flex-space-between font-common-style">
+          <form id="loginForm">
+            <div class="item-user item-common flex-space-between">
+              <img src="../static/img/login/user-icon.png" class="user-icon" alt="" /><span
+                >用户：</span
+              ><input type="text" name="username" value="" />
+            </div>
+            <div class="item-password item-common flex-space-between">
+              <img
+                src="../static/img/login/password-icon.png"
+                class="password-icon"
+                alt=""
+              /><span>密码：</span
+              ><input type="password" name="password" value="" />
+              <img src="../static/img/login/open-eye-icon.png" class="eye-icon" alt="" />
+            </div>
+          </form>
+        </div>
+        <div class="form-item flex-space-between font-common-style">
+          <div class="radio-container flex-space-between">
+            <img src="../static/img/login/select-default.png" class="free-login" alt="" />
+            <span>一周内免登录</span>
+          </div>
+          <span class="underline-font">忘记密码</span>
+        </div>
+        <div class="form-item flex-space-between font-common-style">
+          <button class="btn-common" id="login-btn">登录</button>
+          <button class="btn-common" id="login-out">退出</button>
+        </div>
+        <div class="form-item">
+          <span class="underline-font">没有账号? 马上注册</span>
+        </div>
+        <div class="form-item"></div>
+      </div>
+    </div>
+    <script src="../static/libs/jquery-1.8.3.min.js"></script>
+    <script src="../static/libs/browser.js"></script>
+    <script src="../static/libs/device-resize.js"></script>
+    <script src="../static/js/login.js"></script>
+  </body>
+</html>

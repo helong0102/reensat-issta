@@ -1,0 +1,6 @@
+Vulnerability Report:
+
+File path: 0xd116d1349c1382b0b302086a4e4219ae4f8634ff.sol
+Contract name: Private_Bank
+Reentrancy vulnerability: Yes
+Description: Simple Reentrancy

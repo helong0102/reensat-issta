@@ -1,0 +1,6 @@
+Vulnerability Report:
+
+File path: 0x05f49e3e0a27efa05d60c19cd8f0ecc951d3717e.sol
+Contract name: EtherheroStabilizationFund
+Reentrancy vulnerability: Yes
+Description: Simple Reentrancy

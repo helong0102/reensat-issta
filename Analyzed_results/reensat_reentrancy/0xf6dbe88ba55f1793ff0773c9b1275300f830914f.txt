@@ -1,0 +1,6 @@
+Vulnerability Report:
+
+File path: 0xf6dbe88ba55f1793ff0773c9b1275300f830914f.sol
+Contract name: Asiandragon
+Reentrancy vulnerability: Yes
+Description: Simple Reentrancy

@@ -1,0 +1,84 @@
+<!--
+ * @Author: tangchen 190854524@qq.com
+ * @Date: 2023-09-02 15:01:19
+ * @LastEditors: tangchen 190854524@qq.com
+ * @LastEditTime: 2023-12-02 21:06:15
+ * @FilePath: \二妙散\ErMiao-Powder\index.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../static/css/check.css" />
+  <link rel="stylesheet" href="../static/css/global.css" />
+
+  <link href="../static/css/code-editor/codemirror.min.css" rel="stylesheet" />
+  <link href="../static/css/code-editor/foldgutter.css" rel="stylesheet" />
+  <link href="../static/css/code-editor/mdn-like.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="page-root page-bg">
+    <div class="page-col flex-space-between font-common-style">
+      <div class="logo-container flex-space-between">
+        <img src="../static/img/public/logo.png" class="logo" alt="" />
+        <span>ReenSAT v1.0</span>
+      </div>
+    </div>
+    <div class="page-col">
+      <div class="btn-groups flex-space-between font-common-style">
+        <button class="btn-common bug-check">漏洞检测</button>
+        <button class="btn-common about-me">关于</button>
+      </div>
+    </div>
+    <div id="bug-check" class="page-col flex-space-between font-common-style">
+      <div class="left-container code-container">
+        <textarea class="form-control" id="code" name="code"></textarea>
+      </div>
+      <!--左边文本显示框-->
+      <div class="middle-container">
+        <input type="file" id="fileInput" style="display:none;" />
+        <!--隐藏文件输入框-->
+        <button class="operation-btn" id="upload_file">文件上传</button>
+        <button class="operation-btn" id="version_btn">0.4.2</button>
+        <button class="operation-btn" id="detect-bugs">漏洞检测</button>
+        <button class="operation-btn" id="batch-detection">批量检测</button>
+      </div>
+      <div class="right-container code-container font-common-style">
+        <div class="result-text" id="result-container"></div>
+      </div>
+       <!--右边文本显示框-->
+    </div>
+    <div id="about-me" class="page-col flex-space-between font-common-style">
+      <div class="about-me-container">
+        <div class="about-me-name">关于作品:ReenSAT</div>
+        <div class="about-me-author">关于作者:ReenSAT</div>
+        <div class="about-me-right">版权所有:ReenSAT</div>
+      </div>
+    </div>
+  </div>
+  <script src="../static/libs/jquery-1.8.3.min.js"></script>
+  <script src="../static/libs/browser.js"></script>
+  <script src="../static/libs/device-resize.js"></script>
+  <script src="../static/js/check.js"></script>
+  <script src="../static/js/checks.js"></script>
+
+  
+  <script src="../static/libs/code-editor/codemirror.min.js"></script>
+  <script src="../static/libs/code-editor/active-line.js"></script>
+  <script src="../static/libs/code-editor/javascript.min.js"></script>
+  <script src="../static/libs/code-editor/xml.min.js"></script>
+  <script src="../static/libs/code-editor/clike.min.js"></script>
+  <script src="../static/libs/code-editor/foldcode.js"></script>
+  <script src="../static/libs/code-editor/foldgutter.js"></script>
+
+
+  <script src="../static/libs/code-editor/brace-fold.js"></script>
+  <script src="../static/libs/code-editor/comment-fold.js"></script>
+</body>
+
+</html>

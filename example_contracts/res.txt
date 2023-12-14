@@ -1,0 +1,25 @@
+
+Vulnerability Report:
+
+File path: no-reentrancy.sol
+Contract name: TransToken
+Reentrancy vulnerability: No
+Description: Non
+
+=================================================
+Vulnerability Report:
+
+File path: internal.sol
+Contract name: Test_transfer_or_sender
+Reentrancy vulnerability: No
+Description: Non-callable function
+
+=================================================
+Vulnerability Report:
+
+File path: reentrancy.sol
+Contract name: SimpleDAO
+Reentrancy vulnerability: Yes
+Description: Simple Reentrancy
+
+=================================================

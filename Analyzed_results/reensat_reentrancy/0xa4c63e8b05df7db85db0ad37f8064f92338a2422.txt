@@ -1,0 +1,6 @@
+Vulnerability Report:
+
+File path: 0xa4c63e8b05df7db85db0ad37f8064f92338a2422.sol
+Contract name: DU_Bank
+Reentrancy vulnerability: Yes
+Description: Simple Reentrancy

@@ -1,0 +1,6 @@
+Vulnerability Report:
+
+File path: 0x0459ebad0ba09901fda1441ee72e6cb664257f61.sol
+Contract name: ALFA_bank
+Reentrancy vulnerability: Yes
+Description: Simple Reentrancy

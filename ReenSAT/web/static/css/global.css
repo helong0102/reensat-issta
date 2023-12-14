@@ -1,0 +1,841 @@
+/*全局样式*/
+/*
+ * @Author: tangchen 190854524@qq.com
+ * @Date: 2023-07-12 11:21:07
+ * @LastEditors: tangchen 190854524@qq.com
+ * @LastEditTime: 2023-12-02 21:07:36
+ * @FilePath: \infectious-disease-care\disease-collection-dialog\css\index.css
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
+@charset "utf-8";
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  /* 清除间距 */
+  -webkit-tap-highlight-color: transparent;
+  /* 去除被点击时产生的边框 */
+  font-family: "SOURCEHANSERIFCN-MEDIUM";
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  font-family: "SOURCEHANSERIFCN-MEDIUM";
+  line-height: normal;
+  word-wrap: break-word;
+  word-break: break-all;
+  text-align: justify;
+  color: #333;
+  font-weight: 400;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  /* chrome、safari 字体抗锯齿渲染 */
+  -moz-osx-font-smoothing: grayscale;
+  /* firefox 字体抗锯齿渲染 */
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /* IE8+ 盒模型 默认:content-box */
+  -webkit-text-size-adjust: none;
+  /* 禁止移动端开启阅读模式 */
+  -webkit-touch-callout: none;
+  /* 禁止ios长按时触发系统的菜单 */
+  -webkit-overflow-scrolling: touch;
+  /* ios滚动条 */
+  font-size: 100px;
+  /* 1rem=100px,解决设置字体不能小于12px */
+  /*font-size:5.2083333vw;									!* 基于1920的宽,1rem=100px *!*/
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  font-size: 16%;
+}
+
+.page-root {
+  width: 19.2rem;
+  height: 10.8rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.underline-font {
+  text-decoration: underline;
+  color: #ffe869;
+  cursor: pointer;
+}
+
+.flex-space-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.font-common-style {
+  font-family: OPPOSans;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section,
+main {
+  display: block;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* 重置样式标签的样式 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+th {
+  font-size: inherit;
+  font-weight: bold;
+}
+
+input,
+button,
+select,
+textarea,
+optgroup {
+  font-size: inherit;
+  vertical-align: middle;
+  outline: none;
+  font-family: inherit;
+  color: inherit;
+}
+
+textarea {
+  resize: none;
+  overflow: auto;
+}
+
+/*文本框禁止拖拉*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #ddd;
+  /*;table-layout:fixed*/
+}
+
+/* 重置table属性,单元格按照规定大小分配:(table-layout:fixed) */
+td,
+th {
+  border: 1px solid #ddd;
+}
+
+iframe,
+fieldset,
+img {
+  border: 0;
+}
+
+/* 重置fieldset（表单分组）、图片的边框为0 */
+dl,
+ul,
+ol,
+menu {
+  list-style: none;
+}
+
+/* 重置类表前导符号为none,menu在HTML5中有效,li会继承 */
+hr {
+  clear: both;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+}
+
+a,
+a:active,
+a:hover {
+  text-decoration: none;
+}
+
+/* 重置链接a标签的鼠标滑动效果 */
+a,
+a:focus {
+  outline: 0;
+}
+
+/* 取消a标签的虚线框 */
+video,
+img {
+  vertical-align: top;
+  display: inline-block;
+}
+
+/* 图片在当前行内的垂直位置 */
+video:focus {
+  outline: 0;
+}
+
+img {
+  font-size: 0.12rem;
+}
+
+/* 图片加载失败的文字显示 */
+/* 统一上标和下标 */
+sub,
+sup {
+  font-size: 0.75em;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* 设置输入框、选择框、文本域样式 */
+input[type="text"],
+input[type="password"],
+select,
+textarea {
+  border: 1px solid #ddd;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #1e87f0;
+  -webkit-transition: border-color 0.15s linear;
+  -o-transition: border-color 0.15s linear;
+  transition: border-color 0.15s linear;
+}
+
+/* 设置页面文字等在拖动鼠标选中情况下的背景色与文字颜色 */
+/*::-moz-selection{color:#fff;background-color:#4C6E78}
+ ::selection{color:#fff;background-color:#4C6E78}*/
+
+/* PC滚动条 */
+/* .PC ::-webkit-scrollbar{width:.06rem;height:.06rem}
+ .PC::-webkit-scrollbar,
+ .PC body::-webkit-scrollbar{width:6px;height:6px}
+ .PC ::-webkit-scrollbar-corner,
+ .PC::-webkit-scrollbar-corner,
+ .PC ::-webkit-scrollbar-track,
+ .PC::-webkit-scrollbar-track{background-color:#D4D0F5}
+ .PC ::-webkit-scrollbar-thumb,
+ .PC::-webkit-scrollbar-thumb{background-color:#9896F1}
+ .PC ::-webkit-scrollbar-thumb:hover,
+ .PC::-webkit-scrollbar-thumb:hover{background-color:#a7a6f0} */
+
+/* 全部滚动条样式 */
+
+::-webkit-scrollbar {
+  width: 0.06rem;
+  height: 0.06rem;
+}
+
+::-webkit-scrollbar-corner,
+::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #55b5f4;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #88cbf7;
+}
+
+/* 隐藏滚动条 */
+.nosSrollbar {
+  -ms-overflow-style: none;
+  /* IE10+ */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.nosSrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Chrome、Safari */
+
+/* 页面刷新时无过渡动画 配合js */
+.noTransition,
+.noTransition * {
+  -webkit-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
+/**火狐浏览器滚动条
+ /
+ /* 火狐浏览器滚动条样式 */
+/* 滚动条轨道 */
+div {
+  scrollbar-color: #9896f1 #d4d0f5;
+  /* 第一个颜色为滚动条的颜色， 第二个颜色为滚动条轨道的颜色 */
+  scrollbar-width: thin;
+  /* 设置比默认滚动条宽度更窄的宽度 */
+}
+
+/* 设置表单提示文字颜色 */
+::-webkit-input-placeholder {
+  color: #5d5d5d;
+}
+
+:-moz-placeholder {
+  color: #5d5d5d;
+}
+
+::-moz-placeholder {
+  color: #5d5d5d;
+}
+
+:-ms-input-placeholder {
+  color: #5d5d5d;
+}
+
+/* 隐藏 input type=number 时的右侧按钮 */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* 修改ie select右侧箭头 */
+select::-ms-expand {
+  background-color: transparent;
+  border: 0;
+  color: #9bb8d6;
+}
+
+/* 移动端 */
+[type="button"],
+[type="reset"],
+[type="submit"],
+button {
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+/* 禁用ios上的默认按钮样式 */
+
+/* 浮动 */
+.fl-l {
+  float: left;
+}
+
+.fl-r {
+  float: right;
+}
+
+.clear:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clear {
+  *zoom: 1;
+}
+
+/* 兼容 IE6、IE7 */
+/* 单行省略号 */
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+
+/* 多行省略,数值代表显示几行，IE不支持 */
+.ellipsis-2 {
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* 前边加星号 */
+.asterisk:before {
+  content: "*";
+  color: #ff0000;
+  position: absolute;
+  margin-left: -0.75em;
+  margin-top: 0.2em;
+}
+
+/* 鼠标移入变亮 */
+.hover-style {
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.hover-style:hover {
+  -webkit-filter: brightness(110%);
+  filter: brightness(110%);
+}
+
+/* 图标 */
+.is-icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 0.26rem;
+  height: 0.26rem;
+  line-height: 1;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-style: normal;
+}
+
+.is-icon>img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+/* 常用flex样式 */
+.flex-0 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.flex-1 {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+/* 交叉轴方向居中，默认主轴方向：左到右 */
+.flex,
+.flex-end,
+.flex-center,
+.flex-between,
+.flex-around,
+.flex-column,
+.flex-row-reverse,
+.flex-column-reverse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.flex-end {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.flex-center {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.flex-between {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.flex-around {
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+/* 主轴方向: 上到下 */
+.flex-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+/* 主轴方向: 右到左 */
+.flex-row-reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+/* 主轴方向: 下到上 */
+.flex-column-reverse {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+
+/* 动画-顺时针旋转 */
+@-webkit-keyframes rotate-toRight {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-toRight {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.animate-rotate-toRight {
+  -webkit-animation: rotate-toRight 20s infinite both linear;
+  animation: rotate-toRight 20s infinite both linear;
+}
+
+/* 动画-逆时针旋转 */
+@-webkit-keyframes rotate-toLeft {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+
+@keyframes rotate-toLeft {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+
+.animate-rotate-toLeft {
+  -webkit-animation: rotate-toLeft 20s infinite both linear;
+  animation: rotate-toLeft 20s infinite both linear;
+}
+
+/* 动画-固定尺寸由下飘进 */
+@-webkit-keyframes fadeIn-fromDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0.5rem, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeIn-fromDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0.5rem, 0);
+    transform: translate3d(0, 0.5rem, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animate-fadeIn-fromDown {
+  -webkit-animation: fadeIn-fromDown 1s both;
+  animation: fadeIn-fromDown 1s both;
+}
+
+/* 动画-固定尺寸由上飘进 */
+@-webkit-keyframes fadeIn-fromUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -0.5rem, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeIn-fromUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -0.5rem, 0);
+    transform: translate3d(0, -0.5rem, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animate-fadeIn-fromUp {
+  -webkit-animation: fadeIn-fromUp 1s both;
+  animation: fadeIn-fromUp 1s both;
+}
+
+/* 动画-固定尺寸由左飘进 */
+@-webkit-keyframes fadeIn-fromLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-0.5rem, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeIn-fromLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-0.5rem, 0, 0);
+    transform: translate3d(-0.5rem, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animate-fadeIn-fromLeft {
+  -webkit-animation: fadeIn-fromLeft 1s both;
+  animation: fadeIn-fromLeft 1s both;
+}
+
+/* 动画-固定尺寸由右飘进 */
+@-webkit-keyframes fadeIn-fromRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0.5rem, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeIn-fromRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0.5rem, 0, 0);
+    transform: translate3d(0.5rem, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animate-fadeIn-fromRight {
+  -webkit-animation: fadeIn-fromRight 1s both;
+  animation: fadeIn-fromRight 1s both;
+}
+
+/* 动画-漂浮 */
+@-webkit-keyframes float {
+  0% {
+    -webkit-transform: translate3d(0, -0.04rem, 0);
+    transform: translate3d(0, -0.04rem, 0);
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 02rem, 0);
+    transform: translate3d(0, 0.02rem, 0);
+  }
+}
+
+@keyframes float {
+  0% {
+    -webkit-transform: translate3d(0, -0.04rem, 0);
+    transform: translate3d(0, -0.04rem, 0);
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0.02rem, 0);
+    transform: translate3d(0, 0.02rem, 0);
+  }
+}
+
+.animate-float {
+  -webkit-animation: float 1.4s infinite alternate both ease-in-out;
+  animation: float 1.4s infinite alternate both ease-in-out;
+}
+
+#page {
+  position: relative;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+/* 处理PC上第一次获取屏幕大小有几像素的误差 */
+html.PC {
+  overflow: hidden;
+}
+
+/* width<=768 */
+@media screen and (max-width: 768px) {
+  html.PC {
+    overflow: auto;
+  }
+}
+
+/* height<=432 */
+@media screen and (max-height: 432px) {
+  html.PC {
+    overflow: auto;
+  }
+}
+
+/* 提示 */
+#device_tips {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #000;
+  z-index: 999999999;
+  font-size: 0.75rem;
+  color: #fff;
+}
+
+@-webkit-keyframes rotation {
+  10% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  50%,
+  60% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+
+  100%,
+  90% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rotation {
+  10% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  50%,
+  60% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+
+  100%,
+  90% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+#device_tips .device-orient {
+  background: url("../images/public/device-orient.png") center no-repeat;
+  background-size: 100% 100%;
+  width: 5.36rem;
+  height: 8.72rem;
+  -webkit-animation: rotation infinite 1.5s ease-in-out;
+  animation: rotation infinite 1.5s ease-in-out;
+}
+
+#device_tips .device-orient+p {
+  margin-top: 1rem;
+}
